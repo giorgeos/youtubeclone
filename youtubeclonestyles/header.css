@@ -1,0 +1,129 @@
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(210, 210, 210);
+    z-index: 1;
+    height: 50px;
+}
+
+#left-header {
+    align-items: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+#hamburger img {
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+#youtube-logo img {
+    height: 24px;
+}
+
+#middle-header{
+    display:flex;
+    align-items: center;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 650px;
+}
+#search-bar-div{
+    display:flex;
+    flex:1;
+    margin-right: -50px;
+}
+#search-bar{
+    width: 600px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(210, 210, 210);
+}
+#search-bar::placeholder{
+    font-size: 16px;
+}
+#right-header{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+#right-header img{
+    height: 24px;
+}
+#upload-icon{
+    height: 24px;
+}
+#voice-search-icon{
+    height: 24px;
+}
+#voice-search-button{
+    height: 36px;
+    border-radius: 20px;
+    border: none;
+}
+#search-button{
+    height:36px;
+    width: 60px;
+    border:none;
+    right:60px;
+    background:none;
+    border-left: solid;
+    border-left-width: 1px;
+    border-left-color:rgb(210, 210, 210);
+}
+#search-icon{
+    height:24px;
+}
+#search-button,
+#voice-search-button,
+#upload-button,
+#yt-apps-button,
+#notif-button,
+#userpfp-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    top:40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+#search-button:hover #tooltip,
+#voice-search-button:hover #tooltip,
+#upload-button:hover #tooltip,
+#yt-apps-button:hover #tooltip,
+#notif-button:hover #tooltip,
+#userpfp-button:hover #tooltip {
+    opacity: 1;
+}
