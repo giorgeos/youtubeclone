@@ -47,14 +47,22 @@
     width: 600px;
     height: 30px;
     font-size: 16px;
+    font-weight: 500;
     padding-left: 10px;
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(210, 210, 210);
+    transition: margin-left 0.15s ease, width 0.15s ease;
+}
+#search-bar:focus{
+    background-color: rgb(220, 220, 220);
+    margin-left: -40px;
+    width: 640px;
 }
 #search-bar::placeholder{
     font-size: 16px;
+    font-weight: 500;
 }
 #right-header{
     width: 140px;
@@ -103,6 +111,19 @@
     align-items: center;
     cursor:pointer;
 }
+#upload-button,
+#yt-apps-button,
+#notif-button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+#upload-button:hover,
+#yt-apps-button:hover,
+#notif-button:hover,
+#userpfp-button:hover {
+    background-color: rgb(225,225,225);
+}
 #tooltip{
     position: absolute;
     background-color: gray;
@@ -119,11 +140,16 @@
     pointer-events: none;
     white-space: nowrap;
 }
+#video-info-div #tooltip{
+    top:initial;
+    margin-top: -70px;
+}
 #search-button:hover #tooltip,
 #voice-search-button:hover #tooltip,
 #upload-button:hover #tooltip,
 #yt-apps-button:hover #tooltip,
 #notif-button:hover #tooltip,
-#userpfp-button:hover #tooltip {
+#userpfp-button:hover #tooltip,
+#video-info-div:hover #tooltip {
     opacity: 1;
 }

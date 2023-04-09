@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="youtubeclonestyles/index.css">
+    <link rel="stylesheet" href="youtubeclonestyles/header.css">
+    <link rel="stylesheet" href="youtubeclonestyles/sidebar.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="left-header">
+            <div id="hamburger">
+                <img src="images/header/hamburger-menu.svg">
+            </div>
+            <div id="youtube-logo">
+                <img src="images/header/youtube-logo.svg">
+            </div>
+        </div>
+        <div id="middle-header">
+            <div id="search-bar-div">
+                <input id="search-bar" type="text" placeholder="Search">
+                <button id="search-button">
+                    <img id="search-icon" src="images/header/search.svg">
+                    <div id="tooltip">Search</div>
+                </button>
+            </div>
+            <button id="voice-search-button">
+                <img id="voice-search-icon" src="images/header/voice-search-icon.svg">
+                <div id="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div id="right-header">
+            <div id="upload-button">
+                <img id="upload-icon" src="images/header/upload.svg">
+                <div id="tooltip">Upload media</div>
+            </div>
+            <div id="notif-button">
+                <img id="notif-icon" src="images/header/notifications.svg">
+                <div id="tooltip">Notifications</div>
+            </div>
+            <div id="userpfp-button">
+                <img id="current-userpfp" src="images/header/my-channel.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div id="tabs-list" style="
+            padding-top: 5px;
+            height: 135px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(210,210,210);;
+            ">
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="images/sidebar/home.svg">
+                </div>
+                <div id="tab-text">Home</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="youtubecloneimages/YouTube_Shorts_(Outline).png">
+                </div>
+                <div id="tab-text">Shorts</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="images/sidebar/subscriptions.svg">
+                </div>
+                <div id="tab-text">Subscriptions</div>
+            </div>
+        </div>
+        <div id="tabs-list">
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="images/sidebar/library.svg">
+                </div>
+                <div id="tab-text">Library</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="youtubecloneimages/history.png">
+                </div>
+                <div id="tab-text">History</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="youtubecloneimages/youtube-video-icon-png-27.png">
+                </div>
+                <div id="tab-text">Your Videos</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="youtubecloneimages/watch-later-1781603-1513853.png">
+                </div>
+                <div id="tab-text">Watch Later</div>
+            </div>
+            <div id="tab">
+                <div id="tab-icon">
+                    <img src="youtubecloneimages/kisspng-youtube-like-button-thumb-signal-computer-icons-youtube-clipart-5adbb449852269.4559370715243479775453.jpg">
+                </div>
+                <div id="tab-text">Liked Videos</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="videos-container">
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail1.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="youtubecloneimages/pfps/k.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Adrian Shephard in stasis</p>
+                    <p id="vid-creator">Foie Schoppe <!--&#10003;--></p>
+                    <div id="tooltip">Foie Schoppe</div>
+                    <p id="vid-stats">643 views &#183; 2 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail2.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="images/header/my-channel.jpeg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">JS Full Course</p>
+                    <p id="vid-creator">SuperSimpleDev <!--&#10003;--></p>
+                    <div id="tooltip">SuperSimpleDev</div>
+                    <p id="vid-stats">2M views &#183; 7 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail7.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="youtubecloneimages/pfps/k.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Adrian Shephard in place of Gordon</p>
+                    <p id="vid-creator">Foie Schoppe <!--&#10003;--></p>
+                    <div id="tooltip">Foie Schoppe</div>
+                    <p id="vid-stats">512 views &#183; 1 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail3.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="images/pfps/pfp2.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Fallout 4</p>
+                    <p id="vid-creator">The Fallout Man <!--&#10003;--></p>
+                    <div id="tooltip">The Fallout Man</div>
+                    <p id="vid-stats">643 views &#183; 2 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail4.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="images/pfps/jschlatt.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Back To The Future dubbed with Half-Life SFX</p>
+                    <p id="vid-creator">Jay Schlatt <!--&#10003;--></p>
+                    <div id="tooltip">Jay Schlatt</div>
+                    <p id="vid-stats">80K views &#183; 9 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail5.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="images/pfps/mentaloutlaw.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">The correct way to reload a SPAS-12 (kinda) displayed in Fallout 4</p>
+                    <p id="vid-creator">Mental Law <!--&#10003;--></p>
+                    <div id="tooltip">Mental Law</div>
+                    <p id="vid-stats">2K views &#183; 7 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail6.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="youtubecloneimages/pfps/k.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Hunting down Adrian Shephard while he is in stasis...!</p>
+                    <p id="vid-creator">Foie Schoppe <!--&#10003;--></p>
+                    <div id="tooltip">Foie Schoppe</div>
+                    <p id="vid-stats">768 views &#183; 1 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div id="video-div">
+            <div id="thumbnail-row">
+                <img id="thumbnail" src="youtubecloneimages/thumbnails/thumbnail8.jpg">
+            </div>
+            <div id="pfp-info-row">
+                <div id="pfp-div">
+                    <img id="video-pfp" src="youtubecloneimages/pfps/k.jpg">
+                </div>
+                <div id="video-info-div">
+                    <p id="title">Project Zomboid moment</p>
+                    <p id="vid-creator">Foie Schoppe <!--&#10003;--></p>
+                    <div id="tooltip">Foie Schoppe</div>
+                    <p id="vid-stats">100 views &#183; 1 day ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
